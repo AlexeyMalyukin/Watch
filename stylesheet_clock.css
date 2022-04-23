@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(to bottom, lightblue, yellow);
+}
+
+.clock {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    font-family: 'Pacifico', cursive;
+    color: #17D4FE;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 60px;
+}
+.greeting {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    
+    font-family: 'Pacifico', cursive;
+    color: linear-gradient (to right, red, black);;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 45px;
+}
