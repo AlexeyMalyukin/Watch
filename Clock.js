@@ -27,18 +27,18 @@ function showtime() {
 showtime();
 
 function greetMe() {
-    var greeting = "";
     var date = new Date();
     var h = date.getHours();
-    if (h > 4 | h < 12) {
-        greeting = "Good Morning!";
-    } else if (h < 11 | h > 18) {
-        greeting = "Good afternoon!";
-    } else if (h > 17 | h >= 23) {
-        greeting = "Good evening";
-    } else (h >= 0 | h < 5); {
-        greeting = "Good night!";
-    }
+    var greeting = null;
+        if (h > 4 || h < 12) {
+            greeting = "Good Morning!";
+        } else if (h > 11 || h < 18) {
+            greeting = "Good afternoon!";
+        } else if (h > 17) {
+            greeting = "Good evening";
+        } else if (h < 5) {
+            greeting = "Good night!";
+        }
     document.getElementById("Greeting").textContent = greeting + " We are from Ukraine!";
 
     setTimeout(greetMe, 1000);
