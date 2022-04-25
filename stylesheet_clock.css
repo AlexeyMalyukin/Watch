@@ -1,23 +1,50 @@
+@import url(Clock.js);
+
 body {
-    background: linear-gradient(to bottom, lightblue, yellow);
+    background-image: url('theme3.jpg');
 }
 
 .clock {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     font-family: 'Pacifico', cursive;
-    color: #17D4FE;
+    color: white;
     transform: translateX(-50%) translateY(-50%);
     font-size: 60px;
 }
 .greeting {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     
     font-family: 'Pacifico', cursive;
-    color: linear-gradient (to right, red, black);;
+    color: lightseagreen;
     transform: translateX(-50%) translateY(-50%);
     font-size: 45px;
+}
+
+.search {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-family: 'Robotico', serif;
+    color: black;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 25px;
+    border-radius: 1em;
+    border-color: lightblue;
+    background-color: white;
+
+}
+
+
+.button {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    font-family: 'Robotico', serif;
+    color: black;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 25px;
 }
