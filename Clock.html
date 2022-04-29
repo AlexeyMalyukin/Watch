@@ -1,22 +1,35 @@
-<body background="">
+
 <link href="https://fonts.googleapis.com/css?family=Dosis|Lato|Oswald|Pacifico|Roboto" rel="stylesheet">
 <link rel="stylesheet" href="stylesheet_clock.css">
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
 
-<div id="Greeting" class="greeting" onload="greeting()">
+<div id="Greeting" class="greeting" onload="greetme()">
     <script src="Clock.js"></script>
 </div>
-<div id="MyClock" class="clock" onload="showtime()">
-<script src="Clock.js">
-</script>
+ 
+<div id="MyClock" class="clock" onload="showtime()"> 
+    <script src="Clock.js"></script>
 </div>
+
+<select onchange="showtime()"> 
+    <option value="">Select your GTM</option>
+    <option value="0">GTM 0 (London, Lisbon, Dublin)</option>
+    <option value="1">GTM +1 (Berlin, Brussels, Madrid)</option>
+    <option value="2">GTM +2 (Helsinki, Bucharest)</option>
+    <option value="3">GTM +3 (Kiev, Tehran)</option>
+    <option value="4">GTM +4 (Tbilisi, Kabul)</option>
+    <option value="5">GTM +5 (Calcutta, New Deli)</option>
+    <option value="6">GTM +6 (Almaty, Colombo)</option>
+    <option value="7">GTM +7 (Hanoi, Phnom Penh)</option>
+    <option value="8">GTM +8 (Hong Kong, Beijing, Singapore)</option>
+</select> 
+
+
+
+
 <script async src="https://cse.google.com/cse.js?cx=000888210889775888983:pqb3ch1ewhg"></script>
 
-
-<!----<form class= "search" method="get" action="https://www.google.com/search"> <label>Google Search:</label>
-    <input type="text" name="g" size="20" value="">
-    </form>--->
  
 <form action="https://www.google.com/search" class="search" method="get" name="searchform" target="_blank">
     <input name="sitesearch" type="hidden" value="">
@@ -25,4 +38,3 @@
     </form>
     
 
-</body>

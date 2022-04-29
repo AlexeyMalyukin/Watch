@@ -1,50 +1,78 @@
+  
+
+//function (gtm) {
+  //var color = 'red';
+  //var check = document.querySelector('input[name="color"]:checked');
+  //if (check) color = check.value;
 
 function showtime() {
-    var date = new Date();
-    var h = date.getHours();
-    var m = date.getMinutes();
-    var s = date.getSeconds();
-    
-    if (h < 10){
-        h = "0" + h;
-    } 
-    if (m < 10){
-        m = "0" + m;
-    } 
-    if (s < 10){
-        s = "0" + s;
-    } 
-        
-    var time = h + ":" + m + ":" + s;
+  var date = new Date();
+  var h = date.getHours();
+  var m = date.getMinutes();
+  var s = date.getSeconds();  
+  
+  var gtm = document.querySelector('select').value;
 
-    document.getElementById("MyClock").innerText = time;
-    document.getElementById("MyClock").textContent = time;
-        
-    setTimeout(showtime, 1000);
+
+  myGtm = gtm-3;
+  h+=myGtm; 
+  if (h>23) {
+    h-=24; 
+  }
+  if (h<0) {
+    h+=24
+  } 
     
+  if (h < 10){
+    h = "0" + h;
+  } 
+  if (m < 10){
+    m = "0" + m;
+  } 
+  if (s < 10){
+    s = "0" + s;
+  } 
+  time = h + ":" + m + ":" + s;
+  document.getElementById("MyClock").innerText = time;
+  document.getElementById("MyClock").textContent = time;
+  //document.getElementsByTagName("select")[0].value = 3;
+  setTimeout(showtime, 1000);
 }
 
-showtime();
 
-function greetMe() {
+ 
+//function timelapse() { 
+  
+  //return h;
+//}
+   
+         
+//
+
+
+function greetme() {
     var date = new Date();
     var h = date.getHours();
     var greeting = null;
-        if (h > 4 & h < 12) {
-            greeting = "Good Morning!";
-        } else if (h > 11 & h < 18) {
-            greeting = "Good afternoon!";
-        } else if (h > 17) {
-            greeting = "Good evening!";
-        } else if (h < 5) {
-            greeting = "Good night!";
-        }
+    if (h > 4 & h < 12) {
+        greeting = "Good Morning!";
+    } else if (h > 11 & h < 18) {
+        greeting = "Good afternoon!";
+    } else if (h > 17) {
+        greeting = "Good evening!";
+    } else if (h < 5) {
+        greeting = "Good night!";
+    }
+    
+
+    document.getElementById("Greeting").innerText = greeting + " We are from Ukraine!";
     document.getElementById("Greeting").textContent = greeting + " We are from Ukraine!";
 
-    setTimeout(greetMe, 1000);
+    setTimeout(greetme, 1000);
 }
-greetMe();
 
+greetme();
+//showtime();
 
 var themes = [ 'theme1.jpg', 'theme2.jpg', 'theme3.jpg'];
 index=0;
