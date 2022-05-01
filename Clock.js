@@ -1,53 +1,30 @@
-  
-
-//function (gtm) {
-  //var color = 'red';
-  //var check = document.querySelector('input[name="color"]:checked');
-  //if (check) color = check.value;
-
 function showtime() {
   var date = new Date();
   var h = date.getHours();
   var m = date.getMinutes();
   var s = date.getSeconds();  
+
+  var gtm = 0;
+  if (document.querySelector('select') != undefined) {
+     gtm = document.querySelector('select').value - 3; }
+  h+=gtm; 
   
-  var gtm = document.querySelector('select').value;
-
-
-  myGtm = gtm-3;
-  h+=myGtm; 
-  if (h>23) {
-    h-=24; 
-  }
-  if (h<0) {
-    h+=24
-  } 
+  if (h>23) { h-=24; }
+  if (h<0) { h+=24 } 
     
-  if (h < 10){
-    h = "0" + h;
-  } 
-  if (m < 10){
-    m = "0" + m;
-  } 
-  if (s < 10){
-    s = "0" + s;
-  } 
+  if (h < 10) { h = "0" + h; } 
+  if (m < 10) { m = "0" + m; } 
+  if (s < 10){ s = "0" + s; } 
+  
   time = h + ":" + m + ":" + s;
   document.getElementById("MyClock").innerText = time;
   document.getElementById("MyClock").textContent = time;
-  //document.getElementsByTagName("select")[0].value = 3;
+
   setTimeout(showtime, 1000);
 }
 
+showtime();
 
- 
-//function timelapse() { 
-  
-  //return h;
-//}
-   
-         
-//
 
 
 function greetme() {
@@ -72,7 +49,7 @@ function greetme() {
 }
 
 greetme();
-//showtime();
+
 
 var themes = [ 'theme1.jpg', 'theme2.jpg', 'theme3.jpg'];
 index=0;

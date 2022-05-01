@@ -1,4 +1,4 @@
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Dosis|Lato|Oswald|Pacifico|Roboto" rel="stylesheet">
 <link rel="stylesheet" href="stylesheet_clock.css">
 
@@ -12,8 +12,8 @@
     <script src="Clock.js"></script>
 </div>
 
-<select onchange="showtime()"> 
-    <option value="">Select your GTM</option>
+<select value="gtm" onchange="showtime()" class="selectpicker" data-style="btn-success"> 
+    <option value="3" selected>Select your GTM</option>
     <option value="0">GTM 0 (London, Lisbon, Dublin)</option>
     <option value="1">GTM +1 (Berlin, Brussels, Madrid)</option>
     <option value="2">GTM +2 (Helsinki, Bucharest)</option>
