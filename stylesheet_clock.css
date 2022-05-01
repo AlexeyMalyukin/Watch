@@ -1,13 +1,13 @@
 
 
 
-   #background { 
+#background { 
     position:fixed; left: 0px; 
     top: 0px; background-size:100%;  
-     width:100%; height:100%; 
-     -webkit-user-select: none; -khtml-user-select: none; 
-     -moz-user-select: none; -o-user-select: none; user-select: none; 
-      z-index:9990; 
+    width:100%; height:100%; 
+    -webkit-user-select: none; -khtml-user-select: none; 
+    -moz-user-select: none; -o-user-select: none; user-select: none; 
+    z-index:9990; 
     }
 
 .clock {
@@ -25,6 +25,7 @@
     left: 50%;
     
     font-family: 'Pacifico', cursive;
+    
     color: purple;
     transform: translateX(-50%) translateY(-50%);
     font-size: 45px;
@@ -35,12 +36,15 @@
     top: 60%;
     left: 50%;
     font-family: 'Robotico', serif;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
     color: black;
     transform: translateX(-50%) translateY(-50%);
-    font-size: 25px;
+    font-size: 30px;
     border-radius: 1em;
-    border-color: lightblue;
-    background-color: white;
+    border-color: transparent;
+    background-color: transparent;
 
 }
 
@@ -54,3 +58,4 @@
     transform: translateX(-50%) translateY(-50%);
     font-size: 25px;
 }
+
