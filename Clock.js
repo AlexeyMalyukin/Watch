@@ -1,14 +1,15 @@
+
 function showtime() {
   var date = new Date();
   var h = date.getHours();
   var m = date.getMinutes();
-  var s = date.getSeconds();  
-
+  var s = date.getSeconds(); 
+  
   var gtm = 0;
   if (document.querySelector('select') != undefined) {
      gtm = document.querySelector('select').value - 3; }
-  h+=gtm; 
-  
+  h+=gtm;
+
   if (h>23) { h-=24; }
   if (h<0) { h+=24 } 
     
@@ -49,38 +50,3 @@ function greetme() {
 }
 
 greetme();
-
-
-var themes = [ 'theme1.jpg', 'theme2.jpg', 'theme3.jpg'];
-index=0;
-themes[0]= "<img src='theme1.jpg'>";
-themes[1]= "<img src='theme2.jpg'>";
-themes[2]= "<img src='theme3.jpg'>";
-index = Math.floor(Math.random * themes.length);
-
-$().ready(function(){
-    var i = 0;
-    
-  //   Background Images
-    var images = [
-      'theme1.jpg',
-      'theme2.jpg',
-      'theme3.jpg'
-    ]
-    
-  //   pick body element ID
-    var image = $('#imageChange')
-    
-  //   set initial background-image
-    image.css('background-image', 'url(theme3.jpg)')
-    
-  //   change image every after 5 seconds
-    setInterval(function(){
-      image.fadeOut(1000, function(){
-        image.css('background-image', 'url(' + images [i++] +')')
-        image.fadeIn(1000)
-      })
-      if(1 == images.length)
-        i = 0
-    }, 5000)
-  })
