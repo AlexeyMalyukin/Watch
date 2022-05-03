@@ -4,6 +4,9 @@ function showtime() {
   var h = date.getHours();
   var m = date.getMinutes();
   var s = date.getSeconds(); 
+  //var d = date.getDay();
+  //var m = date.getMonth();
+  //var y = date.getFullYear();
   
   var gtm = 0;
   if (document.querySelector('select') != undefined) {

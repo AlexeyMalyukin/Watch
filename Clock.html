@@ -13,7 +13,8 @@
     
     $().ready(function(){
     var i = 0;
-    var images = ['theme1.jpg','theme2.jpg', 'theme3.jpg']
+    var images = ['Images/theme1.jpg','Images/theme2.jpg', 'Images/theme3.jpg', 'Images/theme4.jpg',
+    'Images/theme5.jpg', 'Images/theme6.jpg', 'Images/theme7.jpg','Images/theme8.jpg']
     var image = $('#background')
     
     image.css('background-image', 'url(theme3.jpg)')
@@ -33,13 +34,13 @@
 <div id="Greeting" class="greeting" onload="greetme()">
     <script src="Clock.js"></script>
 </div>
- 
+
 <div id="MyClock" class="clock" onload="showtime()"> 
     <script src="Clock.js"></script>
 </div>
 
-<select value="gtm" onchange="showtime()" class="selectpicker" data-style="btn-success"> 
-    <option value="3" selected>Select your GTM</option>
+<select value="gtm" onchange="showtime()" class="btn btn-success" data-style="btn btn-success"> 
+    <option value="3" selected>GTM Selection</option>
     <option value="0">GTM 0 (London, Lisbon, Dublin)</option>
     <option value="1">GTM +1 (Berlin, Brussels, Madrid)</option>
     <option value="2">GTM +2 (Helsinki, Bucharest)</option>
@@ -59,5 +60,5 @@
 </div> 
 </div>
 </body>
-    
+   
 </html>
