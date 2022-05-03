@@ -17,7 +17,7 @@
     'Images/theme5.jpg', 'Images/theme6.jpg', 'Images/theme7.jpg','Images/theme8.jpg']
     var image = $('#background')
     
-    image.css('background-image', 'url(theme3.jpg)')
+    image.css('background-image', 'url(Images/theme8.jpg)')
     
     setInterval(function(){
       image.css('background-image', 'url(' + images[Math.floor(Math.random() * images.length)] +')')
@@ -39,7 +39,7 @@
     <script src="Clock.js"></script>
 </div>
 
-<select value="gtm" onchange="showtime()" class="btn btn-success" data-style="btn btn-success"> 
+<select name="GTM" value="gtm" onchange="showtime()" class="btn btn-success" data-style="btn btn-success" >
     <option value="3" selected>GTM Selection</option>
     <option value="0">GTM 0 (London, Lisbon, Dublin)</option>
     <option value="1">GTM +1 (Berlin, Brussels, Madrid)</option>
