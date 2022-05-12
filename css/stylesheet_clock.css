@@ -1,12 +1,18 @@
-
-
-
 #background { 
-    position:fixed; left: 0px; 
-    top: 0px; background-size:100%;  
-    width:100%; height:100%; 
-    -webkit-user-select: none; -khtml-user-select: none; 
-    -moz-user-select: none; -o-user-select: none; user-select: none; 
+    position:fixed; 
+    left: 0px; 
+    top: 0px; 
+
+    background-size:100%;  
+    width:100%; 
+    height:100%;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none; 
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none; 
+
     z-index:9990; 
     }
 
@@ -53,6 +59,10 @@
 
 }
 
+.search:focus {
+    outline: 0;
+}
+
 
 .button {
     position: absolute;
@@ -67,9 +77,43 @@
 .btn {
     position: absolute;
     top: 51%;
-    left: 62%;
-    width:5em;
+    left: 59%;
+    width:1.5em;
+    height: 1.5em;
+    color: white;
+    background-color: #999;
+    
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 14px;
+}
+
+.btn_data {
+    position: absolute;
+    top: 51%;
+    left: 64%;
+    width:10em;
+    align-items: center;
     
     transform: translateX(-50%) translateY(-50%);
     font-size: 18px;
+    transition: .2s linear;
+}
+
+.btn:hover {
+    width: 1.5em;
+    height: 1.5em;
+    left: 59%;
+    border: 1px solid #000;
+    transition: .2s linear;
+}
+
+.btn:active {
+    position: absolute;
+    top: 51%;
+    left: 59%;
+    width:1.5em;
+    
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 18px;
+    transition: .2s linear;
 }
