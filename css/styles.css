@@ -6,6 +6,8 @@
     background-size:100%;  
     width:100%; 
     height:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     -webkit-user-select: none;
     -khtml-user-select: none; 
@@ -23,7 +25,7 @@
     font-family: 'Pacifico', cursive;
     color: black;
  
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    text-shadow: 1px 1px 1px #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     color: white;
     transform: translateX(-50%) translateY(-50%);
     font-size: 60px;
@@ -33,7 +35,7 @@
     top: 40%;
     left: 50%;
     color: black;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    text-shadow: 1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000;
     font-family: 'Pacifico', cursive;
     
     color: white;
@@ -47,20 +49,28 @@
     left: 50%;
     font-family: 'Robotico';
     text-align: center;
+    padding: auto 10px;
+    max-width: 260px;
     
-    color: white;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    color: black;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000;
+    color: #000;
     transform: translateX(-50%) translateY(-50%);
     font-size: 30px;
     border-radius: 1em;
-    border-color: transparent;
+    border: 1px transparent;
+   /* box-shadow: 2px 2px 2px #000;*/
     background-color: transparent;
 
 }
 
 .search:focus {
     outline: 0;
+
+    max-width: 400px;
+    box-shadow: none;
+
+    color: #fff;
 }
 
 
@@ -72,6 +82,7 @@
     color: black;
     transform: translateX(-50%) translateY(-50%);
     font-size: 25px;
+
 }
 
 .btn {
@@ -81,19 +92,21 @@
     width:1.5em;
     height: 1.5em;
     color: white;
-    background-color: #999;
+    background-color: rgba(255, 255, 255, 0.2);
     
     transform: translateX(-50%) translateY(-50%);
     font-size: 14px;
+    
 }
 
-.btn_data {
+.options {
     position: absolute;
     top: 51%;
     left: 64%;
     width:10em;
     align-items: center;
     
+    background-color: rgba(255, 255, 255, 0.2);
     transform: translateX(-50%) translateY(-50%);
     font-size: 18px;
     transition: .2s linear;
@@ -116,4 +129,44 @@
     transform: translateX(-50%) translateY(-50%);
     font-size: 18px;
     transition: .2s linear;
+}
+
+
+@media (max-width: 1500px) {
+    .greeting {
+        font-size: 36px;
+    }
+
+    .btn {
+        left: 61%;
+    }
+
+
+}
+
+@media (max-width: 1130px) {
+    .greeting {
+        width: 100%;
+        left: 70%;
+    }
+
+    .btn {
+        left: 63%;
+    }
+
+    
+
+
+}
+
+@media (max-width: 900px) {
+    .greeting {
+        font-size: 28px;
+    }
+
+    .btn {
+        left: 67%;
+    }
+
+
 }
