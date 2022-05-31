@@ -38,16 +38,16 @@ function greetme() {
     if (h > 4 & h < 12) {
         greeting = "Good Morning!";
     } else if (h > 11 & h < 18) {
-        greeting = "Good afternoon!";
+        greeting = "Good afternoon";
     } else if (h > 17) {
-        greeting = "Good evening!";
+        greeting = "Good evening";
     } else if (h < 5) {
-        greeting = "Good night!";
+        greeting = "Good night";
     }
     
 
-    document.getElementById("Greeting").innerText = greeting + " We are from Ukraine!";
-    document.getElementById("Greeting").textContent = greeting + " We are from Ukraine!";
+    document.getElementById("Greeting").innerText = greeting + " from Ukraine!";
+    document.getElementById("Greeting").textContent = greeting + " from Ukraine!";
 
     setTimeout(greetme, 1000);
 }
